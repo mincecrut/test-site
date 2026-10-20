@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Нур — знакомство с исламом</title>
+<meta name="description" content="Основы ислама: пять столпов, основы веры, Коран.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="#top">Нур</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Меню" aria-expanded="false" aria-controls="nav">☰</button>
+  <nav class="nav" id="nav">
+    <a href="#pillars">Пять столпов</a>
+    <a href="#faith">Основы веры</a>
+    <a href="#quran">Коран</a>
+    <a href="#contact">Связаться</a>
+    <button class="theme-btn" id="themeBtn" aria-label="Сменить тему">☾</button>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <p class="arabic" lang="ar" dir="rtl">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+    <h1>Знакомство с исламом</h1>
+    <p class="lead">Во имя Аллаха, Милостивого, Милосердного. Здесь коротко о главном: во что верят мусульмане и как они живут.</p>
+    <a class="btn" href="#pillars">Начать</a>
+  </section>
+
+  <section id="pillars" class="section">
+    <h2>Пять столпов ислама</h2>
+    <ol class="pillars">
+      <li><h3>Шахада</h3><p>Свидетельство веры: нет божества, кроме Аллаха, и Мухаммад — Его посланник.</p></li>
+      <li><h3>Салят</h3><p>Пять ежедневных молитв: на рассвете, в полдень, после полудня, на закате и ночью.</p></li>
+      <li><h3>Закят</h3><p>Обязательная милостыня: часть накопленного имущества отдаётся нуждающимся.</p></li>
+      <li><h3>Саум</h3><p>Пост в месяц Рамадан: от рассвета до заката без еды и питья.</p></li>
+      <li><h3>Хадж</h3><p>Паломничество в Мекку — раз в жизни для тех, кто имеет возможность.</p></li>
+    </ol>
+  </section>
+
+  <section id="faith" class="section">
+    <h2>Шесть основ веры</h2>
+    <p class="lead">Вера (имян) в исламе включает шесть убеждений.</p>
+    <ul class="faith">
+      <li>Единый Бог — Аллах</li>
+      <li>Ангелы</li>
+      <li>Священные книги</li>
+      <li>Пророки и посланники</li>
+      <li>Судный день</li>
+      <li>Предопределение (кадар)</li>
+    </ul>
+  </section>
+
+  <section id="quran" class="section quran">
+    <h2>Коран</h2>
+    <p>Коран — священная книга мусульман: 114 сур, которые, по вере мусульман, были ниспосланы пророку Мухаммаду ﷺ в течение около 23 лет. Оригинальный текст — на арабском языке; переводы передают лишь смысл.</p>
+    <blockquote lang="ar" dir="rtl">إِنَّ مَعَ ٱلْعُسْرِ يُسْرًا</blockquote>
+    <p class="cite">«Поистине, вместе с трудностью — облегчение» (94:6)</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Задать вопрос</h2>
+    <form id="form" novalidate>
+      <label for="name">Имя</label>
+      <input id="name" name="name" type="text" autocomplete="name">
+      <span class="err" data-for="name"></span>
+
+      <label for="email">Эл. почта</label>
+      <input id="email" name="email" type="email" autocomplete="email">
+      <span class="err" data-for="email"></span>
+
+      <label for="msg">Сообщение</label>
+      <textarea id="msg" name="msg" rows="4"></textarea>
+      <span class="err" data-for="msg"></span>
+
+      <button class="btn" type="submit">Отправить</button>
+      <p class="ok" id="ok" role="status" hidden>Сообщение проверено. Спасибо!</p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer"><p>© 2026 Нур. Сайт создан в учебных целях.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
